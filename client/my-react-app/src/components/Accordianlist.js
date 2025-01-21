@@ -10,7 +10,7 @@ function Accordianlist(props) {
        dataa.map((d)=>{
         return d.card.info.name
        })
-       //raghav ka lauda chota hai 
+  
     }</span> */}
     
     

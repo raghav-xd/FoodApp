@@ -1,0 +1,421 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: black; */
+  background-color: black; /* Ensures the background is black */
+  margin: 0;               /* Removes default margins */
+  padding: 0;              /* Removes default padding */
+  height: 100vh;           /* Makes the body fill the viewport */
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  overflow-y: auto;   
+            
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  /* border: 2px solid grey; */
+  justify-content: space-between;
+  padding: 10px;
+  background-color: black;
+  box-shadow: 0px 4px 8px rgba(165, 162, 162, 0.5); /* Shadow under the navbar */
+  position: sticky; /* Makes the navbar stay at the top when scrolling */
+  top: 0; /* Required for sticky positioning */
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  height: 100px;
+  padding-left: 20px;
+  
+}
+
+.nav-items > ul {
+  display: flex;
+  padding-right: 30px;
+}
+
+
+
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.nav-items > ul > li > a {
+  text-decoration: none; /* Remove underline for links */
+  color: white; /* Ensure the link color matches the text */
+}
+
+.nav-items > ul > li:hover {
+  /* text-decoration: underline; */
+  cursor: pointer;
+  color: hsl(47, 74%, 86%); /* Change color on hover */
+}
+
+.nav-items > ul > li a:hover {
+  /* text-decoration: underline; */
+  cursor: pointer;
+  color: hsl(47, 74%, 86%); /* Change color on hover */
+}
+
+.login-Btn{
+  margin-top: 20px;
+  height: 25px;
+  width:60px;
+  cursor: pointer;
+}
+
+.body-con1 {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  gap: 10px; /* Add space between the input and button */
+  padding: 10px; /* Optional: Add some padding around the container */
+}
+
+.Search{
+   /* border: 2px solid white; */
+   
+}
+
+.search-btn {
+  height: 30px; /* Match height with the input box */
+  padding: 5px 15px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Optional: Add hover effect */
+}
+.search-btn:hover {
+  background-color: #dcdcdc; /* Slightly darker background on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+.Search-box {
+  height: 23px; /* Adjust height for better alignment */
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Optional: Add a border */
+  margin-top: 18px;
+  margin-left: 40px;
+   
+}
+
+
+.error{
+  color:white;
+}
+/* Menu container */
+
+.menu-container{
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  /* border: 2px solid white; */
+  position: relative;
+  overflow: hidden;
+  /* width: 2000px; */
+  /* background-color: #f0f0f0; */
+
+
+}
+.menu-container2{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 1px solid white; */
+  
+}
+.menu-card{
+  width: 200px;
+  height:300px;
+  /* border: 2px solid white; */
+  margin: 10px 10px 10px 10px;
+  
+  
+}
+.menu-img{
+  width:50%;
+  height:auto !important;
+  object-fit: cover;
+  /* border:2px solid blue; */
+}
+.menu-heading{
+  color:#f5deb3;
+}
+
+.menu-card-name{
+  color: white;
+}
+.menu-card >img{
+  width:100%;
+  height:100%;
+}
+.after-menu{
+  color: rgb(128, 87, 87);
+
+}
+/* Body Section */
+.body-con1{
+  display: flex;
+  /* border: 2px solid red; */
+}
+.restrucon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+}
+.fiter-btn{
+  /* padding:10px 15px;
+  margin-right:10px; */
+  display: flex;
+  margin-left: 80px;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 7px 7px 7px 7px;
+  cursor: pointer;
+  background-color: rgb(236, 218, 196);
+}
+.fiter-btn:hover {
+  background-color: rgb(210, 173, 126); /* Slightly darker hover effect */
+}
+.restru-heading {
+  display: flex;
+  padding-left: 80px;
+  color: rgb(210, 183, 133);
+  margin-bottom: 20px;
+  animation: slideInFromLeft 1.5s ease-out;
+}
+
+.res-cards {
+  width: 260px;
+  height: 380px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  margin: 15px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+}
+
+
+
+/* Card hover effects */
+.res-cards:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  background-color: #3a3a3a;
+  cursor: pointer;
+  border-color: white;
+}
+
+/* Card heading styles */
+.res-cards > h3 {
+  margin-top: 10px;
+  /* display: flex; */
+  /* margin-left: 20px; */
+  color: rgb(203, 183, 142);
+  
+}
+.res-cards a{
+  text-decoration: none;
+}
+
+.res-cards h3, .res-cards h5 {
+  text-decoration: none; /* Ensure no underline on h3 or h5 tags */
+}
+
+
+.res-cards > h4 {
+  display: flex;
+  padding-left: 10px;
+}
+
+/* Card image styles */
+.res-cards > img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  /* transition: transform 0.3s ease;  */
+}
+
+/* Hover effect for image scaling */
+.res-cards:hover > img {
+  transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.loading {
+  font: white;
+  font-size: 500px;
+}
+
+.shimmer-container{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+.shimmer-cards {
+  color:white;
+  width: 260px;
+  height: 380px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 150px 15px 15px 15px;
+  align-items: center;
+  
+}
+/* 
+/* Animation for fading in the content */
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);  
+    opacity: 0;  
+  }
+  100% {
+    transform: translateX(0);  
+    opacity: 1;  
+  }
+}
+
+/* restrumenu */
+.Restrumenu{
+  color:white;
+  padding-left: 50px;
+  padding-top: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  
+ 
+}
+.Restrumenu h4{
+  font-size: 14px;
+}
+
+.restru-name{
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.restrumenu-ul{
+  list-style-type: disc;
+  padding-left: 50px;
+  margin-top: 50px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+
+.restaurant-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.restaurant-info h2, .restaurant-info h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.restaurant-info h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.online {
+  color: white;
+}
+
+/* grocery */
+.grocery {
+  color:white;
+}
+
+.promote{
+  color: white;
+  z-index: 2;
+  position: absolute;
+  margin-left: -140px;
+  padding:5px 5px 5px 5px;
+  width: 70px;
+  height: 25px;
+  border: 2px solid rgb(159, 48, 48);
+  border-radius: 10px;
+  background-color: rgb(198, 163, 117);
+  
+}
+
+/* category part in restru menu */
+.category{
+  /* background-color: rgb(147, 160, 172); */
+  width: 800px;
+  /* border: 5px solid white; */
+  height: 2000px;
+  background-color: rgb(160, 171, 180); /* Optional */
+  /* margin-bottom: 20px; */
+   
+  
+}
+.category-section{
+  height: 100px;
+  width: 100%; /* Ensure it spans the full width of the parent */
+  display: flex; /* Use Flexbox for alignment */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  background-color: #edededb4; /* Set background color for contrast */
+  border: 1px solid #bebdbd; /* Light border for definition */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Default shadow */
+  border-radius: 5px; /* Rounded corners */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: black;
+ 
+}
+
+.category-section:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+  transform: scale(1.02); /* Slight zoom-in effect */
+  cursor: pointer; /* Pointer cursor to indicate it's interactive */
+}
+
+.accordian-items{
+  color: black;
+}
